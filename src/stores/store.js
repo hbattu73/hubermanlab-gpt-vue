@@ -12,7 +12,7 @@ export const store = reactive({
     sourceCapabilites: ["Sorted by semantic similarity to your search query", "Linked to the exact timestamp YouTube URL of the audio segment", "Transcribed into text from the original segment courtesy of OpenAI's Whisper"],
     setPassages(passages) {
         this.passages = passages
-        console.log(this.passages)
+        // console.log(this.passages)
     },
     resetState() {
         this.welcomePage = true
@@ -21,6 +21,6 @@ export const store = reactive({
         this.modalIdx = -1
         this.passages = []
         this.message = "I'm an AI agent trained on episodes from the Huberman Lab podcast. You can search for health-related topics, look up specific science-based protocols, and ask any questions pertaining to information mentioned in the podcast. Type in your query above and I'll handle the rest!"
-        console.log(this.modalIdx)
+        // console.log(this.modalIdx)
     }
 })

@@ -37,7 +37,7 @@ import { vOnClickOutside } from '@vueuse/components'
 
 function resetIdx() {
     store.modalIdx = -1
-    console.log(store.modalIdx)
+    // console.log(store.modalIdx)
 }
 
 const title = computed(() => {

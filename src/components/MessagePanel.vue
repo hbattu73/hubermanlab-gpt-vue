@@ -67,8 +67,7 @@ const run = async () => {
     store.message = ''
     store.welcomePage = false
     const ctrl = new AbortController() 
-    // https://3ukak3eoigscdcxb5rn7izajei0lkcum.lambda-url.us-west-1.on.aws
-    await fetchEventSource("http://127.0.0.1:8000/query", {
+    await fetchEventSource("https://3ukak3eoigscdcxb5rn7izajei0lkcum.lambda-url.us-west-1.on.aws/query", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
