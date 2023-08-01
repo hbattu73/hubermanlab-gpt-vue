@@ -1,5 +1,4 @@
 <template>
-    <!-- bg-light-bg-primary/80 -->
     <header class="sticky top-0 bg-light-header backdrop-blur z-50">
         <!-- Nav -->
         <nav class="flex items-center h-14 md:h-16 py-4 px-4 lg:px-16 border-b-1 border-slate-300">       
@@ -17,11 +16,11 @@
                             <PodcastIcon class="w-7 h-7 md:w-6 md:h-6 drop-shadow group-hover:scale-110 group-hover:duration-300"/>
                         </button>
                     </a>
-                    <div class="flex items-center pl-4">
+                    <a href="https://github.com/hbattu73/hubermanlab-gpt-vue.git" target="_blank" class="flex items-center pl-4">
                         <button class="cursor-pointer hover:scale-110 duration-300">
                             <GithubIcon class="w-7 h-7 md:w-6 md:h-6 drop-shadow fill-current text-light-bg-primary"/>
                         </button>
-                    </div>
+                    </a>
                 </div>
             </div>
         </nav>

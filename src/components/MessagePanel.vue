@@ -15,7 +15,6 @@
                 <EnterIcon class="w-8 h-8 fill-current text-primary/90"/>
             </button>
         </div>
-        <!-- <pre>{{ store.query }}</pre> -->
         <div class="min-h-[232px] 2xl:min-h-[312px] flex shrink-0 relative pt-4 pb-12 px-4 rounded-md border-1 border-neutral-300">
             <div class="hidden relative md:flex md:flex-col shrink-0">
                 <img src="../assets/huberman.png" class="w-[120px] h-[120px] lg:w-32 lg:h-32 xl:w-36 xl:h-36 2xl:w-48 2xl:h-48 rounded-md border-1 border-stone-200 shadow-md"/>
@@ -110,7 +109,7 @@ const run = async () => {
                 // passages
                 else if (event === "passages") {
                     const passages = JSON.parse(data)
-                    console.log(passages)
+                    // console.log(passages)
                     store.setPassages(passages)
                     // console.log(JSON.parse(data))
                 }
