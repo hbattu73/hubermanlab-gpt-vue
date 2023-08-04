@@ -4,7 +4,7 @@
             <SourcesIcon class="w-5 h-5 drop-shadow-md"/>
             <h3 class="font-geologica font-medium lg:text-base xl:text-lg text-primary leading-5">Sources</h3>
         </div>
-        <div class="flex flex-row lg:flex-col gap-3 overflow-y-auto">
+        <div class="flex flex-row lg:flex-col gap-3 overflow-y-auto no-scrollbar">
             <div v-if="store.welcomePage" class="flex flex-col space-y-4 2xl:space-y-6 w-full">
                 <span class="font-geologica font-normal text-sm 2xl:text-base text-primary text-center lg:text-start">Each chatbot response will also return the audio sources that the AI used to answer your query. The sources are</span>
                 <div v-for="c in store.sourceCapabilites" class="relative inline-flex items-start justify-start pl-4 lg:pl-0 space-x-2">

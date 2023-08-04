@@ -8,7 +8,7 @@
                         <div class="flex border-b-1 border-primary/70 mb-1">
                             <span class="text-base xl:text-lg 2xl:text-xl font-light text-primary whitespace-pre-wrap line-clamp-2">{{ title }}</span>
                         </div>
-                        <div class="flex max-h-72 xl:max-h-80 2xl:max-h-96 overflow-y-auto pt-1">
+                        <div class="flex max-h-72 xl:max-h-80 2xl:max-h-96 overflow-y-auto no-scrollbar pt-1">
                             <span class="text-sm xl:text-base 2xl:text-lg font-extralight text-slate-700 leading-relaxed ">{{ content }}</span>
                         </div>
                         <div class="flex justify-between flex-1 items-end">

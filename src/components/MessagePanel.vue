@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-8 min-w-full"
-        :class="{'overflow-y-auto': !store.welcomePage}">
+        :class="{'overflow-y-auto no-scrollbar': !store.welcomePage}">
         <div class="flex sticky top-0 font-geologica font-light text-xl z-20">
             <SearchIcon class="absolute w-6 h-6 top-1/2 -translate-y-1/2 left-6 fill-current text-neutral-500 z-30"/>
             <input
