@@ -16,6 +16,7 @@ This codebase is 100% open-source.
 ![](./public/inference-time.png)
 
 ## Deployment to AWS
+![](./public/deployment.png)
 To run the FastAPI application on AWS Lambda, you have to make use of a Lambda extension called [Web Adapter](https://github.com/awslabs/aws-lambda-web-adapter/tree/main). 
 
 [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) provides a nice toolkit that allowed me to easily package this extension and the FastAPI app as a Docker image, push to Amazon ECR, and deploy as a Lambda function, all done via two SAM CLI commands. You can check out the deployment of the backend [here](https://github.com/hbattu73/hubermanlab-gpt/tree/main).

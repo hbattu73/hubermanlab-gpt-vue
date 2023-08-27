@@ -17,16 +17,16 @@
                 <span class="font-geologica font-normal text-gray-700 text-sm 2xl:text-base">Questions</span>
             </div>
         </div>
-        <div class="flex justify-center lg:justify-start pt-2 gap-x-4 gap-y-3 flex-wrap font-geologica font-extralight text-sm 2xl:text-base text-light-bg-primary">
+        <div class="flex justify-center lg:justify-start pt-2 gap-x-4 gap-y-3 flex-wrap font-geologica font-extralight text-sm 2xl:text-base text-[#386588]">
             <span 
                 v-if="!questions" 
                 v-for="t in store.topics" 
-                @click="query(t)" class="py-1.5 px-4 rounded-full bg-light-header shadow-sm hover:brightness-125 hover:shadow cursor-pointer">{{ t }}
+                @click="query(t)" class="py-1.5 px-4 rounded-full bg-sky-600/10 shadow-sm cursor-pointer">{{ t }}
             </span>
             <span 
                 v-if="questions" 
                 v-for="q in store.questions"
-                @click="query(q)" class="py-1.5 px-4 rounded-full bg-light-header hover:brightness-125 hover:shadow cursor-pointer">{{ q }}
+                @click="query(q)" class="py-1.5 px-4 rounded-full bg-sky-600/10 shadow-sm cursor-pointer">{{ q }}
             </span>
         </div>
     </div>
