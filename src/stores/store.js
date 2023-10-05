@@ -5,6 +5,8 @@ export const store = reactive({
     query: '',
     loading: false,
     modalIdx: -1,
+    videoIdx: -1,
+    videoPlayer: false,
     passages: [],
     message: "I'm an AI agent trained on episodes from the Huberman Lab podcast. You can search for health-related topics, look up specific science-based protocols, and ask any questions pertaining to information mentioned in the podcast. Type in your query above and I'll handle the rest!",
     topics: ['ADHD', 'Dopamine', 'The Science Behind Love', 'Neuroplasticity', 'NSDR', 'Psychedelics', 'Caffeine', 'Hair Loss', 'Effects of Alcohol Consumption', 'SSRIS', 'Meditation', 'Sunlight Exposure', 'Managing Stress and Anxiety', 'Fatty Acids', 'Muscle Recovery and Growth'],
@@ -19,6 +21,8 @@ export const store = reactive({
         this.query = ''
         this.loading = false
         this.modalIdx = -1
+        this.videoIdx = -1
+        this.videoPlayer = false
         this.passages = []
         this.message = "I'm an AI agent trained on episodes from the Huberman Lab podcast. You can search for health-related topics, look up specific science-based protocols, and ask any questions pertaining to information mentioned in the podcast. Type in your query above and I'll handle the rest!"
         // console.log(this.modalIdx)

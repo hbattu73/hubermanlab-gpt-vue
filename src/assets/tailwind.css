@@ -4,6 +4,7 @@
 
 body {
     min-width: 320px;
+    position: relative;
 }
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {

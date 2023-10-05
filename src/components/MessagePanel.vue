@@ -67,6 +67,7 @@ const run = async () => {
     store.message = ''
     store.welcomePage = false
     const ctrl = new AbortController() 
+    // http://127.0.0.1:8000/query
     await fetchEventSource("https://3ukak3eoigscdcxb5rn7izajei0lkcum.lambda-url.us-west-1.on.aws/query", {
         method: "POST",
         headers: {
@@ -111,7 +112,6 @@ const run = async () => {
                     const passages = JSON.parse(data)
                     // console.log(passages)
                     store.setPassages(passages)
-                    // console.log(JSON.parse(data))
                 }
                 // error
                 else {

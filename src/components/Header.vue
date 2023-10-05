@@ -1,13 +1,15 @@
 <template>
-    <header class="sticky top-0 bg-light-header backdrop-blur z-50">
+    <header class="sticky top-0 bg-slate-700 backdrop-blur z-50">
         <!-- Nav -->
         <nav class="flex items-center h-14 md:h-16 py-4 px-4 lg:px-16 border-b-1 border-slate-300">       
-            <div class="flex items-center container">
+            <div class="flex items-center container justify-between">
                 <!-- Logo -->
-                <button @click="store.resetState()" class="group inline-flex flex-1 space-x-2 items-end cursor-pointer">
-                    <BrainIcon class="drop-shadow-md group-hover:scale-110 group-hover:drop-shadow-lg w-8 h-8 group-hover:duration-300"/>
-                    <span class="font-geologica font-semibold text-2xl text-light-bg-primary group-hover:brightness-90 group-hover:duration-300">hubermanGPT</span>
-                </button>
+                <div class="flex group cursor-pointer">
+                    <button @click="store.resetState()" class="inline-flex space-x-2 items-end">
+                        <BrainIcon class="drop-shadow-md group-hover:scale-110 group-hover:drop-shadow-lg w-8 h-8 group-hover:duration-300"/>
+                        <span class="font-geologica font-semibold text-2xl text-light-bg-primary group-hover:brightness-90 group-hover:duration-300">hubermanGPT</span>
+                    </button>
+                </div>
                 <!-- Huberman Lab Link -->
                 <div class="flex items-center">
                     <a href="https://hubermanlab.com/" target="_blank" class="flex items-center space-x-5 pr-4 border-slate-400 border-r-1">

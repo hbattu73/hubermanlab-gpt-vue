@@ -21,12 +21,12 @@
             <span 
                 v-if="!questions" 
                 v-for="t in store.topics" 
-                @click="query(t)" class="py-1.5 px-4 rounded-full bg-sky-600/10 shadow-sm cursor-pointer">{{ t }}
+                @click="query(t)" class="py-1.5 px-4 rounded-full bg-slate-200/60 shadow-sm hover:bg-slate-200/70 cursor-pointer">{{ t }}
             </span>
             <span 
                 v-if="questions" 
                 v-for="q in store.questions"
-                @click="query(q)" class="py-1.5 px-4 rounded-full bg-sky-600/10 shadow-sm cursor-pointer">{{ q }}
+                @click="query(q)" class="py-1.5 px-4 rounded-full bg-slate-200/60 shadow-sm hover:bg-slate-200/70 cursor-pointer">{{ q }}
             </span>
         </div>
     </div>
